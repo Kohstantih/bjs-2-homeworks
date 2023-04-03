@@ -30,9 +30,9 @@ class AlarmClock {
         };
         function interval() {
             this.alarmCollection.forEach((value, index, arr) => {
-                if(this.getCurrentFormattedTime() === arr[index].time) {
+                if(this.getCurrentFormattedTime() === arr[index].time && arr[index].canCall === true) {
                     arr[index].canCall = false;
-                    arr[index].callback(arr[index].canCall);
+                    arr[index].callback();
                 };
             })
         };
