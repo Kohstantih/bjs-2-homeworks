@@ -19,7 +19,7 @@ function cachingDecoratorNew(func) {
       console.log("Вычисляем: " + result);
       return 'Вычисляем: ' + result;
     };
-}
+};
 
 //Задача № 2
 function debounceDecoratorNew(func, delay) {
@@ -45,4 +45,4 @@ function debounceDecoratorNew(func, delay) {
     };
     
     return wrapper;
-}ж
+};
